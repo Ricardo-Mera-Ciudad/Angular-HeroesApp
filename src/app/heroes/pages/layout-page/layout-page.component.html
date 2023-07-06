@@ -20,11 +20,12 @@
   </mat-sidenav>
 
   <mat-toolbar color="primary">
-    <button mat-icon-button (click)="sidenav.toggle()">
+    <button mat-icon-button id="test-lighthouse" aria-label="asdf-lighthouse" (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>Logout</button>
+    <!--TODO Auth-->
+    <!-- <button mat-button>Logout</button> -->
   </mat-toolbar>
   <div class="container p-2">
     <router-outlet></router-outlet>

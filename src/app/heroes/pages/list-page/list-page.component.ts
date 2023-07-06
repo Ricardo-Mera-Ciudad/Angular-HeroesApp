@@ -19,7 +19,6 @@ export class ListPageComponent implements OnInit, OnDestroy {
       .getHeroes()
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((heroes) => (this.heroes = heroes));
-
     console.log(this.heroes);
   }
 
